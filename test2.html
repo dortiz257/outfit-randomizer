@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Page</title>
+</head>
+<body>
+
+<h id="display" style="color:blue"></h>
+
+<script>
+window.onload = function() {
+    var savedInput = localStorage.getItem('savedInput');
+    if (savedInput) {
+        document.getElementById('display').innerText = savedInput;
+    } else {
+        document.getElementById('display').innerText = '';
+    }
+}
+</script>
+
+</body>
+</html>

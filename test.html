@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Clone Div</title>
+</head>
+<body>
+
+<div id="originalDiv">
+    This is the original content.
+</div>
+
+<button id="cloneButton">Clone Div</button>
+
+<div id="destination" style="border:solid"></div>
+
+<script>
+document.getElementById("cloneButton").addEventListener("click", function() {
+    var originalDiv = document.getElementById("originalDiv");
+    var clone = originalDiv.cloneNode(true);
+    
+    var destination = document.getElementById("destination");
+    destination.appendChild(clone);
+});
+</script>
+
+</body>
+</html>

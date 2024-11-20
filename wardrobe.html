@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <title>outfit randomizer wardrobe</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wardrobe_start">
+            <div id="blue_header">
+              <h id="heading">wardrobe helper</h>
+            </div>
+            <img id="hanger" src="hanger.png">
+            <h id="wardrobe_txt">this is your wardrobe where you'll see all your saved outfits!</h>
+            <a href="fits.html"><button id="exit">exit</button></a>
+          </div>
+        <div id="name_display"></div>
+        <div id="pso">
+          <img id="current_image" alt="Current Outfit">
+          <img id="current_pant" alt="Current Pant">
+          <img id="current_shoe" alt="Current Shoe">
+        </div>
+        <div id="name_display2"></div>
+        <div id="pso2">
+          <img id="current_image2">
+          <img id="current_pant2">
+          <img id="current_shoe2">
+        </div>
+        <!--<button id="hide_button" onclick="hideDiv()">X</button>-->
+
+        <script>
+             /*function hideDiv() {
+                document.getElementById('name_display').style.display = 'none';
+            } */
+            window.onload = function() {
+            var savedInput = localStorage.getItem('savedInput');
+            var savedImageUrl = localStorage.getItem('savedImageUrl');
+            var savedPantUrl = localStorage.getItem('savedPantUrl');
+            var savedShoeUrl = localStorage.getItem('savedShoeUrl');
+
+            if (savedInput && savedImageUrl && savedPantUrl) {
+              document.getElementById('name_display').innerText = savedInput;
+              document.getElementById('current_image').src = savedImageUrl;
+              document.getElementById('current_pant').src = savedPantUrl;
+              document.getElementById('current_shoe').src = savedShoeUrl;
+            } 
+            else {
+              document.getElementById('name_display').innerText = '';
+              document.getElementById('name_display').style.display = 'none';
+            }
+          }
+          window2.onload = function() {
+            var savedInput2 = localStorage.getItem('savedInput2');
+            var savedImageUrl2 = localStorage.getItem('savedImageUrl2');
+            var savedPantUrl2 = localStorage.getItem('savedPantUrl2');
+            var savedShoeUrl2 = localStorage.getItem('savedShoeUrl2');
+
+            if (savedInput2 && savedImageUrl2 && savedPantUrl2) {
+              document.getElementById('name_display2').innerText = savedInput2;
+              document.getElementById('current_image2').src = savedImageUrl2;
+              document.getElementById('current_pant2').src = savedPantUrl2;
+              document.getElementById('current_shoe2').src = savedShoeUrl2;
+            } 
+            else {
+              document.getElementById('name_display2').innerText = '';
+              document.getElementById('name_display2').style.display = 'none';
+            }
+          }
+        </script>
+    </body>
+</html>

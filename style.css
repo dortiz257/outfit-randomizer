@@ -1,0 +1,438 @@
+body, html{overflow-y:scroll;width:100%;margin:0}
+
+body {background-color:#e7dbc6; }
+
+@font-face {
+  font-family:vt323;
+  src: url(VT323-Regular.ttf);
+}
+
+#randomImage {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  height:232.5px;
+  cursor: pointer;
+  }
+#pso {
+  position:absolute;
+  top:70px;
+  left:502px;
+  height:310px;
+  width:400px;
+}
+
+#randomPants {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:172.5px;
+  cursor:pointer;
+  }
+#pso2 {
+  position:absolute;
+  top:300px;
+  left:503px;
+  height:500px;
+  width:400px;
+}
+
+#randomShoes {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:270px;
+  cursor:pointer;
+}
+#pso3 {
+  position:absolute;
+  top:610px;
+  left:550px;
+  height:90px;
+  width:300px;
+}
+
+#helper {
+  position:absolute;
+  top:10%;
+  right:10%;
+  width:337.28px;
+  height:620px;
+  border:solid;
+  border-width:4px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+}
+
+#blue_header {
+  position:absolute;
+  top:0;
+  width:337.28px;
+  height:45px;
+  background-color:#0d55c8;
+}
+#help_txt{
+  position:absolute;
+  font-family:vt323;
+  top:10px;
+  left:10px;
+  color:white;
+  font-size:27px;
+  letter-spacing:.2px;
+}
+#rando_txt{
+  position:absolute;
+  font-family:vt323;
+  top:115px;
+  left:175px;
+  color:black;
+  font-size:25px;
+  letter-spacing:.2px;
+}
+#shirt_txt{
+  position:absolute;
+  font-family:vt323;
+  top:250px;
+  left:175px;
+  color:black;
+  font-size:25px;
+  letter-spacing:.2px;
+}
+#pant_txt{
+  position:absolute;
+  font-family:vt323;
+  top:390px;
+  left:175px;
+  color:black;
+  font-size:25px;
+  letter-spacing:.2px;
+}
+#shoe_txt{
+  position:absolute;
+  font-family:vt323;
+  top:530px;
+  left:175px;
+  color:black;
+  font-size:25px;
+  letter-spacing:.2px;
+}
+
+#rando {
+  position:absolute;
+  top:86.8px;
+  left:34.72px;
+  width:116.56px;
+  height:80.6px;
+  border:solid;
+  border-width:2px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+}
+#rando:active {
+  border-top-color:black;
+  border-left-color:black;
+  border-right-color:white;
+  border-bottom-color:white;
+}
+#lock_shirt {
+  position:absolute;
+  top:224.44px;
+  left:34.72px;
+  width:116.56px;
+  height:80.6px;
+  border:solid;
+  border-width:2px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+}
+#lock_shirt:active {
+  border-top-color:black;
+  border-left-color:black;
+  border-right-color:white;
+  border-bottom-color:white;
+}
+#lock_pant {
+  position:absolute;
+  top:362.08px;
+  left:34.72px;
+  width:116.56px;
+  height:80.6px;
+  border:solid;
+  border-width:2px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+}
+#lock_pant:active {
+  border-top-color:black;
+  border-left-color:black;
+  border-right-color:white;
+  border-bottom-color:white;
+}
+#lock_shoe {
+  position:absolute;
+  top:499.72px;
+  left:34.72px;
+  width:116.56px;
+  height:80.6px;
+  border:solid;
+  border-width:2px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+}
+#lock_shoe:active {
+  border-top-color:black;
+  border-left-color:black;
+  border-right-color:white;
+  border-bottom-color:white;
+}
+
+#shirt {
+  margin:auto;
+  width:60px;
+}
+#pant {
+  margin:auto;
+  width:43px;
+}
+#shoe {
+  margin:auto;
+  width:60px;
+}
+#dice {
+  margin:auto;
+  width:75px;
+}
+
+#start{
+  position:absolute;
+  top:12%;
+  left:10%;
+  width:307.52px;
+  height:228.16px;
+  border:solid;
+  border-width:4px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+}
+
+#blue_header2 {
+  position:absolute;
+  top:0;
+  width:307.52px;
+  height:25px;
+  background-color:#0d55c8;
+}
+
+#cursor {
+  position:absolute;
+  width:38.44px;
+  top:84.32px;
+  left:30px;
+}
+
+#save {
+  position:absolute;
+  width:95.48px;
+  height:33.48px;
+  top:173.6px;
+  left:43.4px;
+  border:solid;
+  border-width:2px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+  font-family:vt323;
+  font-size:23px;
+  letter-spacing:.2px;
+}
+#save:active {
+  border-top-color:black;
+  border-left-color:black;
+  border-right-color:white;
+  border-bottom-color:white;
+}
+
+#wardrobe {
+  position:absolute;
+  width:95.48px;
+  height:33.48px;
+  top:173.6px;
+  left:163.68px;
+  border:solid;
+  border-width:2px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+  font-family:vt323;
+  font-size:22px;
+  letter-spacing:.2px;
+}
+#wardrobe:active {
+  border-top-color:black;
+  border-left-color:black;
+  border-right-color:white;
+  border-bottom-color:white;
+}
+
+#start_txt {
+  position:absolute;
+  font-family:vt323;
+  top:1px;
+  left:10px;
+  color:white;
+  font-size:21px;
+  letter-spacing:.2px;
+}
+
+#info_txt {
+  position:absolute;
+  font-family:vt323;
+  top:75px;
+  left:87px;
+  font-size:23px;
+  width:190px;
+  letter-spacing:.2px;
+}
+
+.popup {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  width:100%;
+}
+.popup .popuptext {
+  visibility: hidden;
+  position: absolute;
+  width:160px;
+  position:absolute;
+  width:320px;
+  height:190px;
+  border:solid;
+  border-width:4px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+  position: absolute;
+  z-index: 2;
+  left:127%;
+}
+#blue_header3 {
+  position:absolute;
+  top:0;
+  width:320px;
+  height:20px;
+  background-color:#0d55c8;
+}
+#save_txt {
+  position:absolute;
+  font-family:vt323;
+  font-size:20px;
+  width:190px;
+  left:5px;
+  bottom:.3px;
+  color:white;
+  letter-spacing:.2px;
+}
+
+.popup .popuptext::after {
+  content: "";
+}
+.popup .show {
+  visibility: visible;
+}
+
+#fit_name  {
+  position:absolute;
+  top:42%;
+  left:120px;
+  height:10%;
+  width:148px;
+}
+#name_label {
+  font-family:vt323;
+  position:absolute;
+  top:42%;
+  left:30px;
+  font-size:23px;
+  letter-spacing:.2px;
+}
+#submit_button {
+  position:absolute;
+  width:80px;
+  height:30px;
+  top:135px;
+  left:45px;
+  border:solid;
+  border-width:2px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+  font-family:vt323;
+  font-size:20px;
+  letter-spacing:.2px;
+}
+#submit_button:active {
+  border-top-color:black;
+  border-left-color:black;
+  border-right-color:white;
+  border-bottom-color:white;
+}
+#exit_button {
+  position:absolute;
+  width:80px;
+  height:30px;
+  top:135px;
+  left:185px;
+  border:solid;
+  border-width:2px;
+  border-top-color:white;
+  border-left-color:white;
+  border-right-color:black;
+  border-bottom-color:black;
+  background-color:#cccccc;
+  font-family:vt323;
+  font-size:20px;
+  letter-spacing:.2px;
+}
+#exit_button:active {
+  border-top-color:black;
+  border-left-color:black;
+  border-right-color:white;
+  border-bottom-color:white;
+}
+.popup .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}

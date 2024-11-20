@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>outfit randomizer</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="pso">
+          <img id="randomImage" src="shirt1.png" alt="Random Image">
+        </div>
+        <div id="pso2">
+          <img id="randomPants" src="pant1.png" alt="Random Pants">
+        </div>
+        <div id="pso3">
+          <img id="randomShoes" src="shoe1.png" alt="Random Shoes">
+        </div>
+        <script src="script.js"></script>
+        <div id="helper">
+          <div id="blue_header">
+            <h id="help_txt">outfit helper</h>
+          </div>
+          <button id="rando"><img id="dice" src="dice.png" onclick="randomAll()"></button>
+          <button id="lock_shirt" onclick="toggleShirtLock()"><img id="shirt" src="shirt.png"></button>
+          <button id="lock_pant" onclick="togglePantLock()"><img id="pant" src="pant.jpg"></button>
+          <button id="lock_shoe" onclick="toggleShoeLock()"><img id="shoe" src="shoe.png"></button>
+          <h id="rando_txt">randomize</h>
+          <h id="shirt_txt">lock shirt</h>
+          <h id="pant_txt">lock pant</h>
+          <h id="shoe_txt">lock shoe</h>
+        </div>
+
+        <div id="start">
+          <div id="blue_header2">
+            <h id="start_txt">get started</h>
+          </div>
+          <img id="cursor" src="Mano_cursor.svg">
+          <h id="info_txt">click specific piece to cycle and dice to randomize</h>
+          <div class="popup">
+          <button id="save" onclick="togglePopup()">save</button>
+          <span class="popuptext" id="myPopup">
+            <div id="blue_header3"><h id="save_txt">save outfit</h></div>
+            <label for="fit_name" id="name_label">fit name:</label>
+            <input type="text" id="fit_name" name="fit_name">
+            <button id="exit_button" onclick="togglePopup()">exit</button>
+            <button id="submit_button" onclick="saveInput()">submit</button></span>
+            <div class="overlay" onclick="togglePopup()"></div>
+          </div>
+          <a href="wardrobe.html"><button id="wardrobe">wardrobe</button></a>
+        </div>
+      </body>
+
+</html>
